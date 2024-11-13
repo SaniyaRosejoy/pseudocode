@@ -1,0 +1,13 @@
+{
+    "myCpcConfig.updateBranch": "stable",
+    "myCpcConfig.devMode": false,
+    "myCpcConfig.updateRemote": "github",
+    "files.exclude": {
+        ".vscode": true,
+        "CAIE_Code": true,
+	    ".devcontainer": true,
+        ".gitmodules": true,
+        ".gitignore": true
+    },
+    "terminal.integrated.sendKeybindingsToShell": true
+}
