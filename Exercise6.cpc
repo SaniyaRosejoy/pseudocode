@@ -1,0 +1,23 @@
+DECLARE Number1:REAL
+DECLARE Number2:REAL
+DECLARE Result:REAL
+DECLARE Operation:STRING
+OUTPUT "enter the Number1"
+INPUT Number1
+OUTPUT"enter the number2"
+INPUT Number2
+OUTPUT "enter the operation(+,-,*,/)"
+INPUT Operation
+IF Operation ="+"THEN
+    Result<-Number1+Number2
+ENDIF    
+IF Operation ="-" THEN
+   Result<-Number1-Number2
+ENDIF
+IF Operation ="*" THEN
+    Result<-Number1*Number2
+ENDIF
+IF Operation ="/" THEN
+   Result<-Number1/Number2
+ENDIF
+OUTPUT "The result is",Result
