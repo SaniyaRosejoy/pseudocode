@@ -1,0 +1,8 @@
+DECLARE Age:INTEGER
+OUTPUT "what is your age"
+INPUT Age
+IF Age <=18 THEN
+   OUTPUT "You are not allowed"
+ELSE
+   OUTPUT "You are allowed "  
+ENDIF    

@@ -1,0 +1,8 @@
+DECLARE Capital:STRING
+OUTPUT "what is the capital city of japan"
+INPUT Capital
+IF Capital="Tokyo"OR Capital= "tokyo" THEN
+   OUTPUT"The answer is correct"
+ELSE
+   OUTPUT"the answer is wrong"
+ENDIF   

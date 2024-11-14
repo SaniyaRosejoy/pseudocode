@@ -1,0 +1,4 @@
+DECLARE Country:STRING
+OUTPUT "What Is Your Country"
+INPUT Country
+OUTPUT "Your Country Name", Country

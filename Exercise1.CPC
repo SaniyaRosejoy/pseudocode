@@ -1,0 +1,6 @@
+DECLARE AmountDollar:REAL
+DECLARE AmountEuros: REAL
+OUTPUT "Enter the Amount in dollars and convert it to euros"
+INPUT AmountDollar
+AmountEuros<- AmountDollar*0.85
+OUTPUT "The Amount in Euros is : " ,AmountEuros

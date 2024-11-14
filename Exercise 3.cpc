@@ -1,0 +1,8 @@
+DECLARE Country: STRING
+OUTPUT "What is your Country?"
+INPUT Country
+IF Country ="india" OR Country= "France" THEN
+    OUTPUT"you are malayali"
+ELSE 
+    OUTPUT "welcome to India"
+ENDIF
