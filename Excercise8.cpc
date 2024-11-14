@@ -1,0 +1,15 @@
+DECLARE CorrectPassword:STRING
+DECLARE UserPassword :STRING
+DECLARE Attemptsleft:INTEGER
+CorrectPassword <-"ABCD"
+Attemptsleft <-3
+REPEAT
+    OUTPUT"Enter your password"
+    INPUT UserPassword
+    Attemptsleft <- Attemptsleft-1
+UNTIL UserPassword = CorrectPassword OR Attemptsleft=0 
+IF UserPassword = CorrectPassword THEN
+   OUTPUT"You are allowed"
+ELSE
+    OUTPUT"You reach the maximum attempts"
+ENDIF    

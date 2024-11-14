@@ -1,0 +1,5 @@
+DECLARE Age:INTEGER
+REPEAT
+    OUTPUT"enter your age"
+    INPUT Age
+UNTIL Age>=18
