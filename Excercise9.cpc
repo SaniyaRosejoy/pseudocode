@@ -1,0 +1,15 @@
+DECLARE CurrentPassword : STRING
+DECLARE NewPassword1: STRING
+DECLARE NewPassword2:STRING
+REPEAT
+    OUTPUT"Enter your NewPassword1"
+    INPUT NewPassword1
+    OUTPUT"Enter your NewPassword2"
+    INPUT NewPassword2 
+IF NewPassword1=NewPassword2 THEN
+    OUTPUT"your password has been changed"
+ELSE
+    OUTPUT"your password is not changed"
+ENDIF
+UNTIL    NewPassword1=NewPassword2 OR  NewPassword2=""
+
