@@ -1,0 +1,20 @@
+DECLARE CorrectUserPin:INTEGER
+DECLARE UserPin:INTEGER
+DECLARE UserBalance:INTEGER
+DECLARE AttemptsLeft:INTEGER
+DECLARE WithdrawAmount:INTEGER
+CorrectUserPin <-"5566"
+UserBalance <-"435"
+AttemptsLeft <-3
+OUTPUT"Please enter the amount you wish to withdraw"
+    INPUT WithdrawAmount
+REPEAT
+    OUTPUT"Enter your correct user pin"
+    INPUT UserPin   
+    AttemptsLeft <- AttemptsLeft-1
+UNTIL UserPin = CorrectUserPin OR AttemptsLeft=0
+IF UserPin =CorrectUserPin THEN
+   OUTPUT"Please take the money,The rest of the balance =", UserBalance
+ELSE 
+   OUTPUT"Wrong pin entered, please try later"
+ENDIF  
