@@ -1,0 +1,8 @@
+DECLARE Students: ARRAY[0:2] OF STRING
+Students[0] <-  "John"
+Students[1] <-  "Rose"
+Students[2] <-  "James"
+
+FOR Index <- 0 TO 2
+  OUTPUT Students[Index]
+NEXT Index

@@ -1,0 +1,8 @@
+DECLARE Games: ARRAY[0:3] OF STRING
+Games[0] <- "Temple Run"
+Games[1] <- "Brain Test"
+Games[2] <- "Zombiee Catches"
+Games[3] <- "Subway surfaces"
+FOR Index <- 0 TO 3
+  OUTPUT Games [Index]
+ NEXT Index 

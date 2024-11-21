@@ -1,0 +1,24 @@
+DECLARE UserMark: INTEGER
+
+FUNCTION evaluateMark(Mark : INTEGER) RETURNS STRING
+    IF Mark >= 80 AND Mark <= 100 THEN
+        RETURN "Excellent!"
+    ENDIF
+    IF Mark >= 60 AND Mark <= 79 THEN
+        RETURN "Good!"
+    ENDIF
+    IF Mark >= 40 AND Mark <= 59 THEN
+        RETURN "Need improvements"
+    ENDIF
+    IF Mark < 40 THEN
+        RETURN "Not enough"
+    ENDIF
+    IF Mark > 100 OR Mark < 0 THEN
+        Return "Error: Mark must be between 0 and 100"
+    ENDIF
+ENDFUNCTION
+
+OUTPUT "Please enter your mark:"
+INPUT UserMark
+
+OUTPUT evaluateMark(UserMark)
