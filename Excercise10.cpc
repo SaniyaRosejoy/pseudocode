@@ -1,0 +1,9 @@
+DECLARE CorrectEmail:STRING
+   OUTPUT"Enter your email"
+   INPUT CorrectEmail
+IF CorrectEmail="admin@test.com" THEN 
+   CorrectEmail = CorrectEmail 
+   OUTPUT"welcome admin" 
+ELSE 
+   OUTPUT"you are not allowed"
+ENDIF   

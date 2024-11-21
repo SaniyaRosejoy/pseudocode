@@ -1,0 +1,13 @@
+DECLARE CorrectPin:STRING
+CorrectPin <- "test1234"
+AttemptsLeft <- 5
+REPEAT 
+    OUTPUT"enter your correct pin"
+    INPUT CorrectPin
+    AttemptsLeft <- AttemptsLeft -1
+IF CorrectPin = CorrectPin THEN    
+   OUTPUT"computer unlocked"
+ELSE
+    OUTPUT"computer locked"
+UNTIL CorrectPin = CorrectPin = 0 
+ENDIF   

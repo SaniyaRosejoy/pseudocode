@@ -1,0 +1,8 @@
+DECLARE Total:INTEGER
+DECLARE Average:REAL
+FOR Row <- 1 TO 20
+    Total <- Total+ Row
+NEXT Row
+OUTPUT"Total is", Total
+Average <- Total/20
+OUTPUT "Average is", Average
